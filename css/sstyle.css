@@ -12,7 +12,7 @@ color: #333;
 background-color: #fafafa;
 }
 
-/* Навигация */
+/* Navigation*/
 .navbar {
 display: flex;
 justify-content: space-between;
@@ -106,7 +106,7 @@ font-size: 1.2rem;
 opacity: 0.9;
 }
 
-/* Сетка меню */
+/* Menu grid */
 .menu-grid {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -252,7 +252,7 @@ font-size: 1.2rem;
 opacity: 0.9;
 }
 
-/* Сетка команды */
+/* Team grid */
 .team-section {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -313,7 +313,7 @@ font-size: 1.1rem;
 opacity: 0.9;
 }
 
-/* Блоки информации */
+/* Information blocks */
 .kontakt-info {
 display: flex;
 flex-wrap: wrap;
