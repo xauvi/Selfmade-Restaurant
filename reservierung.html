@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reservierung | Selfmade Korean Restaurant</title>
+<link rel="stylesheet" href="css/sstyle.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+    <div class="logo">Selfmade</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menü</a></li>
+        <li><a href="reservierung.html" class="active">Reservierung</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    </nav>
+</header>
+
+<section class="reserve-hero">
+    <h1>Tisch reservieren</h1>
+    <p>Buchen Sie Ihren Platz im Selfmade Korean Restaurant</p>
+</section>
+
+<section class="reserve-form-section">
+    <form class="reserve-form" action="#" method="post">
+    <div class="form-group">
+        <label for="name">Name*</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">E-Mail*</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="datum">Datum*</label>
+        <input type="date" id="datum" name="datum" required>
+    </div>
+
+    <div class="form-group">
+        <label for="zeit">Zeit*</label>
+        <input type="time" id="zeit" name="zeit" required>
+    </div>
+
+    <div class="form-group">
+        <label for="personen">Anzahl der Personen*</label>
+        <input type="number" id="personen" name="personen" min="1" max="20" required>
+    </div>
+
+    <div class="form-group">
+        <label for="nachricht">Nachricht (optional)</label>
+        <textarea id="nachricht" name="nachricht" rows="4" placeholder="z.B. Fensterplatz, Geburtstag..."></textarea>
+    </div>
+
+    <button type="submit" class="btn">Jetzt reservieren</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 Selfmade Korean Restaurant | Alle Rechte vorbehalten</p>
+</footer>
+</body>
+</html>

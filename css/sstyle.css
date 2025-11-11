@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: "Poppins", sans-serif;
+color: #333;
+background-color: #fafafa;
+}
+
+/* Навигация */
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 80px;
+background-color: #4b2c4f;
+}
+
+.logo {
+color: #fff;
+font-size: 1.8rem;
+font-weight: bold;
+}
+
+.nav-links {
+display: flex;
+list-style: none;
+gap: 40px;
+}
+
+.nav-links a {
+color: #fff;
+text-decoration: none;
+font-weight: 500;
+transition: 0.3s;
+}
+
+.nav-links a:hover {
+color: #f5d67b;
+}
+
+/* Hero Section */
+.hero {
+background: url("../images/hero.jpg") center/cover no-repeat;
+height: 90vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: #ffffff;
+}
+
+.hero-text h1 {
+font-size: 3rem;
+margin-bottom: 10px;
+}
+
+.hero-text p {
+font-size: 1.2rem;
+margin-bottom: 20px;
+}
+
+.btn {
+background-color: #f5d67b;
+color: #4b2c4f;
+padding: 10px 20px;
+border-radius: 30px;
+text-decoration: none;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.btn:hover {
+background-color: #f5d67b;
+}
+
+/* Footer */
+footer {
+background-color: #4b2c4f;
+color: rgb(192, 104, 104);
+text-align: center;
+padding: 15px;
+font-size: 0.9rem;
+}
+
+/* ----- MENU PAGE ----- */
+.menu-hero {
+text-align: center;
+padding: 80px 20px;
+background-color: #4b2c4f;
+color: white;
+}
+
+.menu-hero h1 {
+font-size: 2.8rem;
+margin-bottom: 10px;
+}
+
+.menu-hero p {
+font-size: 1.2rem;
+opacity: 0.9;
+}
+
+/* Сетка меню */
+.menu-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 40px;
+padding: 60px 80px;
+background-color: #fff;
+}
+
+.dish {
+background-color: #f9f9f9;
+border-radius: 15px;
+overflow: hidden;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+transition: transform 0.3s, box-shadow 0.3s;
+text-align: center;
+padding-bottom: 20px;
+}
+
+.dish:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.dish img {
+width: 100%;
+height: 220px;
+object-fit: cover;
+}
+
+.dish h3 {
+margin: 15px 0 5px;
+font-size: 1.4rem;
+color: #4b2c4f;
+}
+
+.dish p {
+font-size: 0.95rem;
+color: #555;
+padding: 0 15px;
+margin-bottom: 10px;
+}
+
+.price {
+display: inline-block;
+background-color: #f5d67b;
+color: #4b2c4f;
+font-weight: bold;
+padding: 6px 15px;
+border-radius: 20px;
+}
+
+/* Активная ссылка в меню */
+.nav-links a.active {
+color: #f5d67b;
+}
+
+/* ----- RESERVIERUNG PAGE ----- */
+
+.reserve-hero {
+text-align: center;
+padding: 80px 20px;
+background-color: #b28dd9;
+color: white;
+}
+
+.reserve-hero h1 {
+font-size: 2.5rem;
+margin-bottom: 10px;
+}
+
+.reserve-hero p {
+font-size: 1.2rem;
+opacity: 0.9;
+}
+
+.reserve-form-section {
+background-color: #fff;
+padding: 60px 20px 100px;
+display: flex;
+justify-content: center;
+}
+
+.reserve-form {
+background-color: #f8f5fb;
+padding: 40px 50px;
+border-radius: 20px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+max-width: 500px;
+width: 100%;
+}
+
+.form-group {
+display: flex;
+flex-direction: column;
+margin-bottom: 20px;
+}
+
+.form-group label {
+font-weight: 600;
+color: #5c3a8c;
+margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+padding: 10px 12px;
+border: 1px solid #ddd;
+border-radius: 10px;
+font-size: 1rem;
+outline: none;
+transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+border-color: #b28dd9;
+box-shadow: 0 0 0 3px rgba(178, 141, 217, 0.2);
+}
+
+button.btn {
+width: 100%;
+font-size: 1.1rem;
+border: none;
+cursor: pointer;
+}
+
+/* ----- TEAM PAGE ----- */
+
+.team-hero {
+text-align: center;
+padding: 80px 20px;
+background-color: #b28dd9;
+color: white;
+}
+
+.team-hero h1 {
+font-size: 2.5rem;
+margin-bottom: 10px;
+}
+
+.team-hero p {
+font-size: 1.2rem;
+opacity: 0.9;
+}
+
+/* Сетка команды */
+.team-section {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 40px;
+padding: 60px 80px;
+background-color: #fff;
+}
+
+.team-member {
+background-color: #f8f5fb;
+border-radius: 15px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+text-align: center;
+padding: 20px;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.team-member img {
+width: 100%;
+height: 250px;
+object-fit: cover;
+border-radius: 12px;
+margin-bottom: 15px;
+}
+
+.team-member h3 {
+color: #5c3a8c;
+margin-bottom: 8px;
+}
+
+.team-member p {
+color: #555;
+font-size: 0.95rem;
+padding: 0 10px;
+}
+
+/* ----- KONTAKT PAGE ----- */
+
+.kontakt-hero {
+text-align: center;
+padding: 80px 20px;
+background-color: #b28dd9;
+color: white;
+}
+
+.kontakt-hero h1 {
+font-size: 2.5rem;
+margin-bottom: 10px;
+}
+
+.kontakt-hero p {
+font-size: 1.1rem;
+opacity: 0.9;
+}
+
+/* Блоки информации */
+.kontakt-info {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 40px;
+padding: 60px 40px;
+background-color: #fff;
+}
+
+.info-box {
+background-color: #f8f5fb;
+border-radius: 15px;
+padding: 25px;
+width: 280px;
+text-align: center;
+box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+transition: transform 0.3s;
+}
+
+.info-box:hover {
+transform: translateY(-5px);
+}
+
+.info-box h3 {
+color: #5c3a8c;
+margin-bottom: 10px;
+}
+
+/* Карта */
+.kontakt-map {
+margin: 0;
+padding: 0;
+}
+
+/* Форма */
+.kontakt-form {
+background-color: #fff;
+text-align: center;
+padding: 80px 20px;
+}
+
+.kontakt-form h2 {
+color: #5c3a8c;
+margin-bottom: 30px;
+}
+
+.kontakt-form form {
+max-width: 600px;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.kontakt-form input,
+.kontakt-form textarea {
+padding: 12px;
+border: 2px solid #e0d4f3;
+border-radius: 10px;
+font-size: 1rem;
+font-family: inherit;
+outline: none;
+transition: border 0.3s;
+}
+
+.kontakt-form input:focus,
+.kontakt-form textarea:focus {
+border-color: #b28dd9;
+}
+
+.kontakt-form button {
+background-color: #f3d85f;
+border: none;
+color: #000;
+font-weight: bold;
+padding: 12px;
+border-radius: 10px;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+.kontakt-form button:hover {
+background-color: #e0c74f;
+}
