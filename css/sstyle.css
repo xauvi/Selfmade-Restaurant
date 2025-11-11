@@ -158,7 +158,7 @@ padding: 6px 15px;
 border-radius: 20px;
 }
 
-/* Активная ссылка в меню */
+/* Active link in the menu */
 .nav-links a.active {
 color: #f5d67b;
 }
@@ -342,13 +342,13 @@ color: #5c3a8c;
 margin-bottom: 10px;
 }
 
-/* Карта */
+/* Map */
 .kontakt-map {
 margin: 0;
 padding: 0;
 }
 
-/* Форма */
+/* Form */
 .kontakt-form {
 background-color: #fff;
 text-align: center;
